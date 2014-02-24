@@ -4,7 +4,7 @@
 
 #pragma once
 
-static class memoryUtilities
+static class MemoryUtilities
 {
 	public:
 	
