@@ -1,4 +1,12 @@
-static extern "C" void MemoryUtilities::writeDetour(const DWORD source, const DWORD destination, const DWORD padSize, const bool type)
+/******************************************
+	MemoryUtilities::writeDetour Source
+	Author:	Matthew Boyette
+	Date:	02/13/2008
+******************************************/
+
+#include "Exodus.h"
+
+void MemoryUtilities::writeDetour(const DWORD source, const DWORD destination, const DWORD padSize, const bool type)
 {
 	const static BYTE bufferSize       = 0xFF;
 	static BYTE dataBuffer[bufferSize] = {NULL};

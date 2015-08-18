@@ -1,4 +1,12 @@
-static extern "C" void MemoryUtilities::writeMemory(const DWORD source, const DWORD destination, const DWORD dataLength)
+/******************************************
+	MemoryUtilities::writeMemory Source
+	Author:	Matthew Boyette
+	Date:	02/13/2008
+******************************************/
+
+#include "Exodus.h"
+
+void MemoryUtilities::writeMemory(const DWORD source, const DWORD destination, const DWORD dataLength)
 {
 	DWORD oldProtectionFlag = NULL;
 	
